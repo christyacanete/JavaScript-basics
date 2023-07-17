@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing Shapes</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="shapes.js"></script>
+    <script type="module" src="circle.js"></script>
+    <script type="module" src="square.js"></script>
+    <script type="module" src="star.js"></script>
+    <script type="module" src="script.js"></script>
+</head>
+<body>
+    <button class="btn green-btn selected" id="green-btn" type="button"></button>
+    <button class="btn blue-btn" id="blue-btn" type="button"></button>
+    <button class="btn purple-btn" id="purple-btn" type="button"></button>
+    <div class="shape-container">
+        <span class="shape circle-btn" id="circle">&#11044;</span>
+        <span class="shape square-btn" id="square">&#x25A0;</span>
+        <span class="shape star-btn" id="star">&#9733;</span>
+    </div>
+    <button class="reset-btn" id="reset" type="button">RESET</button>
+    <div id="canvas"></div>
+</body>
+</html>
