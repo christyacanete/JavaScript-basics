@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>JS Circle Demo</title>
+    <!-- <script src="circle.js"></script> -->
+    <script src="circleES5proto.js"></script>
+    <!-- <script src="circleES6.js"></script> -->
+</head>
+<body>
+    <div id='canvas'></div>
+    <script>
+        // initialize cLib (circleLibrary) with 100 circles
+        //const cLib = new Circles(100);
+        let cLib = new Circles(100);
+    
+        // draw 100 circles on #canvas
+        cLib.draw_circles("canvas");
+        
+        // any other code you need to make this work
+    </script>
+</body>
