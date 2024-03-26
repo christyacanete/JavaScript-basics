@@ -1,0 +1,39 @@
+#container {
+    height: 100vh;
+    width: 100%;
+}
+p {
+    display: none;
+    position: absolute;  
+    /*background-color: #CCE8CC;*/
+}
+
+#green-btn,
+#blue-btn,
+#purple-btn {
+    border: none;
+    width: 80px;
+    height: 30px;
+}
+
+#green-btn {
+    background-color: #CCE8CC;
+}
+
+#blue-btn {
+    background-color: #50b3f5;
+}
+
+#purple-btn {
+    background-color: #b379da;
+}
+
+#reset-btn {
+    width: 80px;
+    height: 30px;
+    border: 1px solid black;
+    vertical-align: top;
+    margin-left: 100px;
+    box-shadow: 1px 1px black;
+    border-radius: 5px;
+}
