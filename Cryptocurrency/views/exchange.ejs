@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exchanges</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;400&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            function displayData(start, end){
+                $.get('/exchanges', function(data){
+                    $('.container').html("");
+                    for(let i=start; i<end; i++){
+                        $('.container').append("<p>" + data[i].name + "</p>");
+                    }
+                }, 'json');
+            }
+
+            let start=0, end=10;
+            displayData(start, end);
+
+            $('#prev').click(function(){
+                if(start >= 10){
+                    start -= 10;
+                    end -= 10;
+                    displayData(start, end);
+                }
+            })
+
+            $('#topList').click(function(){
+                start = 0;
+                end = 100;
+                displayData(start, end);
+            })
+
+            $('#next').click(function(){
+                start += 10;
+                end += 10;
+                displayData(start, end);
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="top-menu">
+        <h1>Exchanges</h1>
+        <span><a href="/cryptocurrency">Cryptocurrency</a><a href="/finance-platforms">Finance Platforms</a></span>
+    </div>
+    <div class="container"><p></p></div>
+    <div class="nav">
+        <button id="prev">Previous 10</button>
+        <button id="topList">List Top 100</button>
+        <button id="next">Next 10</button>
+    </div>
+</body>
+</html>
