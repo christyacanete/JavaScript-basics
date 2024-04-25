@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: url('bg.jpg');
+    background-size:cover;
+}
+form,
+.container {
+    font-family: arial;
+    font-size: 0.8em;
+    color: aliceblue;
+    margin: 5% 38%;
+    padding: 20px;
+    width: 25%;
+    border: 1px solid aliceblue;
+    border-radius: 10px;
+}
+form {
+    height: 70vh;
+}
+h1 {
+    margin: 0% 0% 5% 22%;
+    color: aliceblue;
+}
+label {
+    margin: 10px;
+}
+input, 
+select, 
+textarea {
+    margin: 12px;
+    display: block;
+    height: 20px;
+    color:rgb(100, 100, 100);
+}
+textarea {
+    width: 89%;
+    height: 30%;
+    padding: 5px;
+}
+input[type=submit]{
+    margin-left: 78%;
+}
+input[type=submit],
+input[type=button] {
+    height: 25px;
+    width: 60px;
+    background-color: aliceblue;
+    border: 0.5px solid aliceblue;
+    color: black;
+}
+#name {
+    width: 70%;
+    padding: 5px;
+}
+p {
+    font-size: 0.8em;
+    font-weight: lighter;
+    padding: 10px;
+    color: aliceblue;
+}
+#result {
+    height: 0px;
+    border: none;
+}
