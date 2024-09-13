@@ -1,0 +1,18 @@
+<html lang="en">
+<head>
+    <title>Generate Coupon</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome Customer!</h1>
+        <p>We're giving away <span>free coupons </span>as token of appreciation.</p>
+        <form action="/" method="POST">            
+            <p id="discount">50% Discount</p>
+            <p id="coupon-num"><%= details.couponNum %></p>
+            <input type="submit" name="reset" id="reset" value="Reset count" />
+            <input type="submit" name="claim" id="claim" value="Claim again" />   
+        </form>
+    </div>
+</body>
+</html>

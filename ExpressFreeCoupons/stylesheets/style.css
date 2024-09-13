@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;    
+}
+body {
+    /* background-color: rgb(46, 148, 216); */
+    background: url('bg.jpg');
+    font-family: Arial, sans-serif
+}
+.container {
+    background: rgb(182, 119, 33);
+    margin: 5% 35%;
+    width: 25%;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px;
+    position: relative;
+}
+h1,
+p,
+input {
+    display: block;
+}
+h1,
+p {
+    padding: 8px 0px;
+    color: white;
+}
+span {
+    font-weight: bolder;
+}
+label {
+    line-height: 100px;
+    color: white;
+}
+#name {
+    margin-left: 20%;
+    padding-left: 5px;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: gray;
+}
+input[type='submit'] {
+    margin-top: 2%;
+    margin-left: 40%;
+    width: 70px;
+    height: 30px;
+    color: white;
+    background-color: rgb(127, 23, 31);
+    border: none;
+    border-radius: 15px;
+}
+#reset,
+#claim {
+    margin: 25px 5px;
+    display: inline;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+#reset {
+    background-color: rgb(127, 23, 31);
+}
+#claim {
+    background-color: rgb(23, 127, 117);
+}
+#coupon-num {
+    margin: 0 auto;
+    width: 50%;
+    background-color: rgb(33, 182, 168);
+    border-radius: 10px;
+    border: 2px solid rgb(23, 127, 117);
+    font-size: 20px;
+}
+#sorry {
+    font-size: 20px;
+    line-height: 30px;
+    vertical-align: bottom;
+}
+
