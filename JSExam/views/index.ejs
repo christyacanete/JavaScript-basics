@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Draw Circles</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+        <script type="module" src="circle.js"></script>     
+    </head>
+<body>
+    <div class="buttons">
+        <button id="yellow-btn" type="button"></button>
+        <button id="green-btn" type="button"></button>
+        <button id="blue-btn" type="button"></button>
+        <button id="purple-btn" type="button"></button>
+        <button id="reset-btn" type="button">RESET</button>
+        <div id="container"></div>
+    </div>
+    <div id="messageArea">
+        <p id="label">Members in the room:</p>
+        <div id="message">
+            <p id="users"></p>
+        </div>
+    </div>
+</body>
+</html>

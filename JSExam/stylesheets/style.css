@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+body {
+    font-family: 'Varela Round', sans-serif;
+}
+p {
+    display: none;
+    position: absolute;  
+    /*background-color: #CCE8CC;*/
+}
+#user {
+    font-size: 0.9em;
+    height: 10px;
+    color: black; 
+    /*background-color: #CCE8CC;*/
+}
+#users, #label {
+    font-size: 0.9em;
+    height: 10px;
+    display: block;
+    position: relative;
+}
+.buttons {
+    width: 75%;
+    float: left;
+}
+#container {
+    height: 100vh;
+    width: 100%;
+    display: inline-block;
+}
+#messageArea {
+    width: 20%;
+    height: 100vh;
+    padding: 10px 20px;
+    overflow-y: scroll;
+    border: 1px solid gray;
+    float: left;
+}
+#yellow-btn,
+#green-btn,
+#blue-btn,
+#purple-btn,
+#reset-btn {
+    border: none;
+    width: 80px;
+    height: 30px;
+}
+#yellow-btn {
+    background-color: #faf258;
+}
+#green-btn {
+    background-color: #CCE8CC;
+}
+#blue-btn {
+    background-color: #50b3f5;
+}
+#purple-btn {
+    background-color: #b379da;
+}
+#reset-btn {
+    width: 80px;
+    height: 30px;
+    border: 1px solid black;
+    vertical-align: top;
+    margin-left: 100px;
+    box-shadow: 1px 1px black;
+    border-radius: 5px;
+}
+.username {
+    display: inline-block;
+    width: 80px;
+    font-weight: bold;
+}
+#new-user {
+    font-style: italic;
+    color:#0698b1;
+}
+
