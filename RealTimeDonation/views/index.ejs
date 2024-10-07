@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-time Donation</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type ="text/javascript">
+        $(document).ready(() => {
+            const socket = io();
+            $('.btn').on('click', (event) => {
+                if(event.target.id === 'donate'){
+                    $.get('/donate', data => {
+                        socket.emit('updateDonation', {msg: 'Adding donation...'});
+                        socket.on('updateAllClients', data => {
+                            $('#amount').text(data.donation);
+                        });
+                    });
+                }
+                else if(event.target.id === 'redeem'){
+                    $.get('/redeem', data => {
+                        socket.emit('updateDonation', {msg: 'Deducting donation...'});
+                        socket.on('updateAllClients', data => {
+                            $('#amount').text(data.donation);
+                        });
+                    });
+                }
+                return false;
+            });
+        })
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Total Cash Donation: $<span id="amount"><%= donation %></span></h1>
+        <p>Give according to one's capacity;</p>
+        <p>Take according to one's need</p>
+        <button id="donate" class="btn">Donate $10</button>
+        <button id="redeem" class="btn">Redeem $10</button>
+    </div>
+</body>
+</html>
