@@ -1,0 +1,11 @@
+{
+  "name": "routingpages",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "nodemon":"nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
